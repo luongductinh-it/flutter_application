@@ -1,16 +1,73 @@
 # flutter_app
 
-A new Flutter project.
+A cross-platform Flutter application.
+
+## Features
+
+- Modern UI with Material Design
+- Supports Android, iOS, Web, Windows, macOS, and Linux
+- Uses packages: `lottie`, `shared_preferences`, `flutter_launcher_icons`, `http`, `cupertino_icons`
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Dart SDK (included with Flutter)
+- IDE: [VS Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```sh
+   git clone <your-repo-url>
+   cd flutter_app
+   ```
+
+2. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+
+3. Run the app:
+   - For mobile/web:
+     ```sh
+     flutter run
+     ```
+   - For desktop (Windows/macOS/Linux):
+     ```sh
+     flutter run -d windows   # or macos, linux
+     ```
+
+### Project Structure
+
+- `lib/` - Main Dart source code
+- `assets/` - Images and other assets
+- `android/`, `ios/`, `web/`, `windows/`, `macos/`, `linux/` - Platform-specific code
+- `test/` - Unit and widget tests
+
+### Useful Commands
+
+- Analyze code:
+  ```sh
+  flutter analyze
+  ```
+- Run tests:
+  ```sh
+  flutter test
+  ```
+- Build release:
+  ```sh
+  flutter build apk        # Android
+  flutter build ios        # iOS
+  flutter build web        # Web
+  flutter build windows    # Windows
+  flutter build macos      # macOS
+  flutter build linux      # Linux
+  ```
+
+## Resources
+
+- [Flutter Documentation](https://docs.flutter.dev/)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter Cookbook](https://docs.flutter.dev/cookbook)
